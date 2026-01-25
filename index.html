@@ -1,23 +1,344 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+  <!-- Schema.org ProfessionalService/LocalBusiness Markup (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "전국 동물병원 인테리어 전문 디자인 컨설팅",
+    "image": "https://도메인/로고.png",
+    "url": "https://도메인/동물병원인테리어",
+    "telephone": "031-123-4567",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "경기도 평택시 ○○로 ○○",
+      "addressLocality": "평택시",
+      "addressRegion": "경기",
+      "postalCode": "17900",
+      "addressCountry": "KR"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "서울시" },
+      { "@type": "City", "name": "부산시" },
+      { "@type": "City", "name": "대구시" },
+      { "@type": "City", "name": "인천시" },
+      { "@type": "City", "name": "광주시" },
+      { "@type": "City", "name": "대전시" },
+      { "@type": "City", "name": "울산시" },
+      { "@type": "City", "name": "세종시" },
+      { "@type": "City", "name": "수원시" },
+      { "@type": "City", "name": "용인시" },
+      { "@type": "City", "name": "고양시" },
+      { "@type": "City", "name": "창원시" },
+      { "@type": "City", "name": "성남시" },
+      { "@type": "City", "name": "청주시" },
+      { "@type": "City", "name": "김해시" },
+      { "@type": "City", "name": "포항시" },
+      { "@type": "City", "name": "남양주시" },
+      { "@type": "City", "name": "제주시" },
+      { "@type": "City", "name": "춘천시" },
+      { "@type": "City", "name": "강릉시" },
+      { "@type": "City", "name": "전주시" },
+      { "@type": "City", "name": "순천시" },
+      { "@type": "City", "name": "원주시" },
+      { "@type": "City", "name": "천안시" },
+      { "@type": "City", "name": "아산시" },
+      { "@type": "City", "name": "경주시" },
+      { "@type": "City", "name": "구미시" },
+      { "@type": "City", "name": "양산시" },
+      { "@type": "City", "name": "목포시" },
+      { "@type": "City", "name": "군산시" }
+    ],
+    "priceRange": "₩₩₩",
+    "description": "2026년 최신 동물병원 인테리어 비용 견적 가이드. 동물병원 개원 전 필수 체크리스트, 평당 가격, 예상 금액 비교, 저렴한 업체 추천, 법규 준수 설계 전문 서비스 제공."
+  }
+  </script>
+
+  <!-- CSS Style optimized for readability and soft colors -->
+  <style>
+    body { font-family: 'Noto Sans KR', sans-serif; margin:0; padding:0; background:#f0f4f8; color:#333; line-height:1.7; font-size:16px; }
+    header { background:#ffffff; text-align:center; padding:40px 20px; border-bottom:5px solid #0b3d91; box-shadow:0 4px 12px rgba(0,0,0,0.05); }
+    section { max-width:900px; margin:20px auto; padding:30px 25px; background:#ffffff; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.05); }
+    h1, h2, h3 { color:#0b3d91; margin-bottom:15px; }
+    h1 { font-size:2.8rem; line-height:1.3; font-weight:700; color:#0b3d91; }
+    h2 { font-size:2.2rem; border-left:6px solid #a3c4ff; padding-left:15px; margin-top:30px; margin-bottom:20px; font-weight:600; }
+    h3 { font-size:1.6rem; color:#4a4a4a; margin-top:25px; }
+    p, li, td, th { font-size:1.1rem; }
+    ul, ol { padding-left:25px; margin-bottom:20px; }
+    li { margin-bottom:8px; }
+    table { width:100%; border-collapse: collapse; margin:20px 0; border-radius:8px; overflow:hidden; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+    th, td { border:1px solid #e0eaf3; padding:15px; text-align:left; font-size:1.05rem; }
+    th { background:#a3c4ff; color:#fff; font-weight:700; }
+    td { background:#ffffff; }
+    a { color:#0b3d91; text-decoration:none; transition: color 0.3s ease; }
+    a:hover { text-decoration:underline; color:#4285f4; }
+    .btn-cta {
+      display:inline-block;
+      padding:16px 35px;
+      background:#4285f4;
+      color:#fff;
+      font-weight:700;
+      border:none;
+      border-radius:30px;
+      box-shadow:0 6px 12px rgba(66, 133, 244, 0.4);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      cursor:pointer;
+      text-decoration:none;
+      text-align:center;
+      font-size:1.1rem;
+      margin-top:20px;
+    }
+    .btn-cta:hover { background:#3367d6; transform:translateY(-2px); }
+    nav ul { list-style:none; padding:0; display:flex; justify-content:center; flex-wrap:wrap; margin-top:20px; }
+    nav li { margin:8px 15px; }
+    nav li a { padding:10px 15px; display:block; background:#e0eaf3; border-radius:20px; color:#0b3d91; font-weight:600; transition:background-color 0.3s ease; }
+    nav li a:hover { background:#a3c4ff; color:#fff; text-decoration:none; }
+    .anchor { display:block; position:relative; top:-100px; visibility:hidden; }
+    .highlight { background-color:#fff3cd; padding:10px; border-radius:8px; margin-bottom:20px; }
+    .info-box { background:#f9f9f9; padding:20px; border-left:4px solid #4285f4; margin:20px 0; border-radius:8px; }
+
+    /* 반응형 디자인 */
+    @media(max-width:768px) {
+      body { padding:10px; }
+      header { padding:30px 15px; }
+      h1 { font-size:2.2rem; }
+      h2 { font-size:1.8rem; padding-left:10px; }
+      h3 { font-size:1.4rem; }
+      p, li, td, th { font-size:1rem; }
+      section { margin:10px auto; padding:20px; }
+      nav ul { flex-direction:column; align-items:center; }
+      nav li { margin:5px 0; width:90%; }
+      nav li a { width:100%; box-sizing:border-box; text-align:center; }
+      .btn-cta { width:100%; padding:15px 0; }
+      form { max-width:100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>동물병원 인테리어: 2026년 최신 비용 견적 가이드</h1>
+    <p>성공적인 개원을 위한 동물병원 인테리어 전문가의 설계 원칙과 비용 절감 노하우를 공개합니다. 전국 어디서든 최적의 견적을 받아보세요.</p>
+    <a class="btn-cta" href="#contact">전문가와 무료 상담하기</a>
+  </header>
+
+  <nav aria-label="페이지 내 이동">
+    <ul>
+      <li><a href="#intro">인테리어 중요성</a></li>
+      <li><a href="#cost">비용 & 견적 가이드</a></li>
+      <li><a href="#law">법규 및 체크리스트</a></li>
+      <li><a href="#design">핵심 설계 원칙</a></li>
+      <li><a href="#faq">자주 묻는 질문</a></li>
+      <li><a href="#contact">견적 문의</a></li>
+    </ul>
+  </nav>
+
+  <section id="intro">
+    <span id="intro-anchor" class="anchor"></span>
+    <h2>성공적인 동물병원 개원을 위한 인테리어의 중요성</h2>
+    <p>동물병원 인테리어는 단순한 공간 디자인을 넘어, 환자인 동물들의 심리적 안정과 보호자들의 신뢰를 구축하는 핵심 요소입니다. 2026년 현재, 단순히 진료 기능에 집중하는 것을 넘어, 환자와 보호자 모두에게 쾌적하고 편안한 환경을 제공하는 것이 경쟁력의 기반이 되고 있습니다. 특히 '내돈내산' 후기가 중요해지는 요즘, 첫인상을 결정하는 인테리어는 병원의 전문성과 이미지를 대변합니다.</p>
+    <p class="info-box"><strong>수의사법 개정 및 동물 복지 강화 트렌드:</strong> 최근 강화되고 있는 동물 복지 관련 법규와 수의사법 개정안은 동물병원의 시설 기준을 높이고 있습니다. 단순히 진료 공간을 마련하는 것을 넘어, 동물 특성에 맞는 재료 사용, 방음 처리, 격리 시설의 확보 등 전문적인 설계가 필수입니다. 잘못된 인테리어는 추후 법규 위반으로 인한 재시공이나 개원 지연으로 이어질 수 있으므로, 초기 단계부터 전문가의 조언을 받는 것이 중요합니다.</p>
+    <h3>동물병원 인테리어가 일반 인테리어와 다른 이유</h3>
+    <p>일반 상업 공간이나 주택 인테리어와 달리, 동물병원은 고유한 전문성을 요구합니다. 동물병원의 특수성은 다음과 같은 측면에서 인테리어에 큰 영향을 미칩니다.</p>
+    <ul>
+      <li><strong>동물의 스트레스 최소화:</strong> 대기 공간, 진료실, 입원실 등 각 구역에서 동물이 느끼는 스트레스를 줄이기 위한 설계가 중요합니다. 미끄럼 방지 바닥재, 청각 민감성을 고려한 방음, 심리적 안정을 위한 색상 선택이 필요합니다.</li>
+      <li><strong>위생 및 소독 편의성:</strong> 오염 발생 가능성이 높기 때문에 청소와 소독이 용이한 자재를 사용해야 합니다. 틈새가 적은 마감재, 내구성이 높은 벽지, 배수 시설 등이 중요합니다.</li>
+      <li><strong>의료 장비 배치 및 동선 효율화:</strong> 수술실, X-ray실, 초음파실 등 고가 장비의 효율적인 배치와 의료진의 동선을 최적화하는 설계가 필수입니다. 이는 진료 효율과 직결됩니다.</li>
+      <li><strong>법규 준수:</strong> 의료법(수의사법) 및 건축법상 요구되는 필수 시설(격리실, 대기실, 수술실 등)의 면적과 기준을 정확히 준수해야 합니다.</li>
+    </ul>
+  </section>
+
+  <section id="cost">
+    <span id="cost-anchor" class="anchor"></span>
+    <h2>동물병원 인테리어 비용 & 견적 가이드 (2026년 기준)</h2>
+    <p>동물병원 개원 시 인테리어 비용은 가장 큰 비중을 차지하는 항목 중 하나입니다. 인테리어 비용은 크게 3가지 요소에 의해 결정됩니다. 평수, 디자인 등급, 그리고 시공 난이도입니다. 2026년 기준, 전국 평균 평당 인테리어 비용은 150만원에서 300만원 이상까지 다양하게 형성되며, '저렴한곳'을 찾는 것도 중요하지만 '합리적인 견적'을 받는 것이 중요합니다.</p>
+
+    <h3>1. 비용 산출 핵심 요소 분석</h3>
+    <p>인테리어 '예상 금액'을 산출할 때는 다음과 같은 세부 항목들을 고려해야 합니다.</p>
+    <ul>
+      <li><strong>평수 및 공간 구성:</strong> 평수가 클수록 총 금액은 증가하지만 평당 단가는 감소할 수 있습니다. 수술실, X-ray실, 입원실 등 전문 공간이 많을수록 비용은 상승합니다.</li>
+      <li><strong>자재 등급 및 마감재:</strong> 일반 인테리어 대비 내구성과 위생이 강조되는 자재(미끄럼 방지 타일, 항균 벽체)를 사용하므로 비용이 높습니다.</li>
+      <li><strong>의료 장비 설치 연동:</strong> X-ray 차폐, 수술실 특수 설비, 공조 시스템 등 의료 장비 설치를 위한 기반 공사가 포함됩니다.</li>
+      <li><strong>철거 및 설비 공사 난이도:</strong> 기존 건물의 구조 변경이 필요한 경우, 철거 및 설비 비용이 추가됩니다. 특히 서울, 부산 등 대도시 상가 건물의 경우 까다로운 규제나 주차장 문제 등으로 공사 난이도가 높아질 수 있습니다.</li>
+    </ul>
+
+    <h3>2. 2026년 전국 지역별 평균 견적 (평당 금액 비교)</h3>
+    <p>지역별 인건비와 자재 운반비 차이로 인해 인테리어 비용이 상이합니다. 특히 서울, 경기 지역은 인건비가 높고, 지방 소도시(예: 전남 목포, 경북 경주)는 인건비가 상대적으로 낮지만, 전문 인력 수급이 어려울 수 있습니다. 아래 표는 2026년 기준, 30평 규모의 중급 인테리어 '평균 가격'을 기준으로 작성되었습니다.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>지역 구분</th>
+          <th>평당 예상 금액</th>
+          <th>주요 특징</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>서울, 경기 (수도권)</td>
+          <td>₩180만 ~ ₩300만 이상</td>
+          <td>높은 인건비 및 임대료, 치열한 경쟁으로 인한 고급화 추세.</td>
+        </tr>
+        <tr>
+          <td>부산, 대구, 인천 등 광역시</td>
+          <td>₩160만 ~ ₩250만</td>
+          <td>중급 인테리어 수요 높음, 다양한 '견적' 옵션 존재.</td>
+        </tr>
+        <tr>
+          <td>충청, 강원, 경상, 전라 등 지방</td>
+          <td>₩140만 ~ ₩220만</td>
+          <td>지역별 '저렴한곳' 찾기 용이, 단 전문 업체 수 부족 가능성 있음.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>3. 비용 절감을 위한 핵심 노하우 (저렴한곳 찾기 vs. 합리적 비용)</h3>
+    <p>'싼곳'만 고집하다 보면 결국 하자 보수 비용이 더 들 수 있습니다. 합리적인 '비용'으로 만족스러운 결과를 얻기 위한 팁입니다.</p>
+    <ul>
+      <li><strong>디자인 컨셉 명확화:</strong> 초기 단계에서 불필요한 마감재 변경을 최소화하면 추가 '금액' 지출을 줄일 수 있습니다.</li>
+      <li><strong>전문 업체 비교:</strong> '순위'가 높은 업체보다는 동물병원 시공 경험이 많은 전문 업체를 3~4곳 이상 '비교'하여 견적을 받는 것이 좋습니다.</li>
+      <li><strong>부분 공사 고려:</strong> 전체 '풀 서비스' 인테리어 대신, 필수 공간(수술실, X-ray실)은 전문가에게 맡기고 비필수 공간(대기실)은 '내돈내산'으로 셀프 인테리어하는 방안도 고려할 수 있습니다.</li>
+    </ul>
+
+    <h3>4. 동물병원 인테리어 견적 비교표 (내돈내산 후기 반영)</h3>
+    <p>포장 이사처럼 동물병원 인테리어도 서비스 범위에 따라 '가격' 차이가 큽니다. '포장이사'의 개념처럼, 설계부터 시공, 가구까지 모두 포함하는 풀 서비스와 부분적인 '반포장' 서비스에 해당하는 컨설팅 서비스를 비교해 보겠습니다.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>인테리어 유형</th>
+          <th>서비스 범위</th>
+          <th>평균 가격대 (30평 기준)</th>
+          <th>장점 / 단점</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Full Service (종합 시공)</td>
+          <td>설계, 시공, 자재 구매, 감리, 가구 제작 등 전 과정 일괄 진행</td>
+          <td>₩5,000만 ~ ₩9,000만+</td>
+          <td><strong>장점:</strong> 전문성, 시간 절약, 높은 품질 보장. <strong>단점:</strong> 초기 '비용' 부담 큼.</td>
+        </tr>
+        <tr>
+          <td>Design Consulting (설계 중심)</td>
+          <td>디자인 설계 및 도면만 제공, 시공은 고객이 별도 '가입'된 업체 이용</td>
+          <td>₩1,000만 ~ ₩2,000만 (설계비)</td>
+          <td><strong>장점:</strong> '저렴한곳'에서 시공 가능, 맞춤 설계. <strong>단점:</strong> 시공 관리 부담, 최종 품질 불확실성.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="law">
+    <span id="law-anchor" class="anchor"></span>
+    <h2>동물병원 개원 필수 법규 및 인테리어 체크리스트</h2>
+    <p>동물병원은 「수의사법」 및 「동물보호법」 등 다수의 법규를 준수해야 하는 특수 시설입니다. 인테리어 설계 시 법규 미준수로 인한 재시공을 방지하기 위해 반드시 다음 사항들을 확인해야 합니다.</p>
+
+    <h3>1. 2026년 기준 주요 법규 준수 사항</h3>
+    <p>특히 2026년에는 동물 복지 관련 규정이 더욱 강화되어, 아래 사항에 대한 정확한 이해가 필요합니다. 인테리어 업체 '가입' 전 반드시 해당 법규 준수 경험이 있는지 확인해야 합니다.</p>
+    <ul>
+      <li><strong>진료실 및 대기실 면적:</strong> 수의사법 시행규칙에 따라 최소 면적 기준이 있습니다. 특히 대기실과 진료실은 분리된 공간으로 설계해야 하며, 입원실은 감염병 예방을 위해 독립적으로 구성해야 합니다.</li>
+      <li><strong>격리실 설치 의무:</strong> 전염병이나 피부병 등 감염 우려가 있는 동물을 위한 격리실은 필수 설치 시설입니다. 이는 방음 및 환기 시스템을 갖추어야 합니다.</li>
+      <li><strong>방사선 발생장치 설치 기준:</strong> X-ray 장비를 설치할 경우, 방사선 차폐 시설을 갖추어야 합니다. 이는 건축물 구조 변경 및 시공이 필요하므로 초기 설계 단계에서 전문가의 도움이 필요합니다.</li>
+      <li><strong>소방 및 건축법:</strong> 특정 규모 이상의 병원은 피난 시설, 방화 구획 등 소방 규정을 준수해야 합니다.</li>
+    </ul>
+
+    <h3>2. 인테리어 체크리스트 (개원 전 준비사항)</h3>
+    <ol>
+      <li><strong>입지 선정:</strong> 주변 주차 환경, 접근성, 경쟁 병원 '순위' 등을 고려하여 위치 선정.</li>
+      <li><strong>설계 및 도면 확인:</strong> 법규 준수 여부(격리실, 면적 등)를 포함하여 설계 도면을 꼼꼼히 '비교' 검토.</li>
+      <li><strong>자재 선정:</strong> 미끄럼 방지 바닥재, 항균성 벽지, 방음재 등 동물 친화적인 자재 선택.</li>
+      <li><strong>공간 분리:</strong> 대기 공간(강아지/고양이 분리), 진료 공간, 수술 공간, 입원 공간의 동선 분리 설계.</li>
+      <li><strong>견적 및 계약:</strong> 세부 '견적' 내역을 꼼꼼히 확인하고 하자 보수 기간, 추가 '비용' 발생 가능성 명시.</li>
+      <li><strong>행정 처리:</strong> 건축 허가, 의료 기기 등록, 사업자 등록 등 행정 절차 미리 준비.</li>
+    </ol>
+    <div class="info-box">
+        <h4><a href="https://www.law.go.kr/lsInfoP.do?lsiSeq=251082&efYd=20240401#0000" target="_blank">참고: 수의사법 시행규칙 (국가법령정보센터)</a></h4>
+        <p>동물병원 개설 등록 시 요구되는 시설 기준을 정확히 확인하여 인테리어 계획에 반영해야 합니다. 수술실, 입원실, 대기실 등 필수 시설의 면적 기준을 준수해야 합니다.</p>
+    </div>
+  </section>
+
+  <section id="design">
+    <span id="design-anchor" class="anchor"></span>
+    <h2>동물 친화적 디자인 핵심 원칙 & 성공 사례</h2>
+    <p>성공적인 동물병원 인테리어는 심미적인 아름다움뿐만 아니라 기능성과 동물 복지를 고려해야 합니다. 다음은 2026년 트렌드를 반영한 핵심 설계 원칙입니다.</p>
+
+    <h3>1. 동선(Flow) 설계: 보호자와 의료진, 환자의 동선 분리</h3>
+    <p>효율적인 동선은 진료의 질을 높이고 의료진의 피로도를 줄입니다. 특히 보호자가 진료 과정을 불편하게 보지 않고, 동시에 환자 동물들의 안전을 확보하는 것이 중요합니다. 대기실에서 진료실, 검사실, 그리고 입원실로 이어지는 동선은 명확하게 분리되어야 합니다.</p>
+
+    <h3>2. 색상 및 조명 설계: 심리적 안정감을 주는 환경</h3>
+    <p>동물들은 사람보다 훨씬 예민한 감각을 가지고 있습니다. 특히 청각과 시각에 민감합니다. 강렬한 원색보다는 차분한 베이지, 연두색, 하늘색 계열의 '부드러운 색감'을 사용하여 안정감을 줍니다. 조명은 너무 밝지 않은 간접 조명이나 전반 조명을 사용하여 동물의 눈부심을 줄여야 합니다.</p>
+
+    <h3>3. 자재 선택: 위생과 안전을 최우선으로</h3>
+    <p>동물병원의 바닥재는 반드시 미끄럼 방지 기능이 있어야 합니다. 미끄러운 바닥은 관절이 약한 동물들에게 치명적인 부상을 초래할 수 있습니다. 벽체는 항균 기능이 있는 타일이나 패널을 사용하는 것이 좋습니다. 이는 청소 및 소독 편의성과 직결됩니다. '내돈내산' 후기를 보면 바닥재 선택의 중요성이 가장 강조됩니다.</p>
+
+    <h3>4. 지역별 인테리어 특화 전략</h3>
+    <p>전국 주요 도시별 특성을 고려한 인테리어 전략이 필요합니다. 서울 강남, 경기도 성남 등 경쟁이 치열한 지역에서는 펫 카페나 미용실을 병행하는 등 부가 서비스를 위한 공간 구성이 중요합니다. 제주, 강원도 등 관광지에서는 펜션과 연계된 호텔링 서비스를 강조하는 인테리어가 유리할 수 있습니다. 부산 해운대, 대구 수성구 등 대도시 주거 밀집 지역에서는 가족 단위 보호자를 위한 넓은 대기 공간이 필요합니다.</p>
+  </section>
+
+  <section id="faq">
+    <span id="faq-anchor" class="anchor"></span>
+    <h2>자주 묻는 질문 (FAQ)</h2>
+    <dl>
+      <dt>Q1: 동물병원 인테리어, 일반 인테리어 업체와 전문 업체의 '차이점'은 무엇인가요?</dt>
+      <dd>A: 일반 인테리어 업체는 미용실, 식당 등 상업 공간을 주로 시공합니다. 하지만 동물병원 인테리어 전문 업체는 수의사법, 의료 장비 설치, 동물 복지 설계 등 특수한 요구 사항에 대한 이해가 깊습니다. '비교'견적을 통해 전문성을 확인하는 것이 중요합니다.</dd>
+
+      <dt>Q2: 인테리어 '가격'을 '저렴한곳'에서 하면 어떤 문제가 발생할 수 있나요?</dt>
+      <dd>A: '싼곳'을 찾다 보면 법규 미준수로 인한 재시공 위험, 낮은 품질의 자재 사용으로 인한 내구성 문제, 비효율적인 동선 설계로 인한 진료 효율 저하 등의 '단점'이 있습니다. 초기 '비용'을 아끼려다 더 큰 손해를 볼 수 있습니다.</dd>
+
+      <dt>Q3: '평당 가격' 외에 추가 '비용'이 발생하는 주요 항목은 무엇인가요?</dt>
+      <dd>A: 냉난방 공조 시스템 설치, X-ray 차폐 공사, 의료용 가구 제작, CCTV 및 보안 시스템 설치, 외부 간판 및 파사드(Facade) 디자인 비용 등이 있습니다. 견적서에서 "추가 비용" 항목을 명확히 확인해야 합니다.</dd>
+
+      <dt>Q4: '내돈내산' 후기를 보면 '추천' 업체 선정 시 어떤 점을 중요하게 봐야 하나요?</dt>
+      <dd>A: 시공 실적, 수의사법 준수 경험, 그리고 하자 보수 기간 및 약관을 꼼꼼히 확인해야 합니다. '후기' 중에서도 실제 병원 개원한 수의사들의 상세한 '내돈내산' 후기를 참고하여 업체를 선정하는 것이 좋습니다.</dd>
+    </dl>
+    <div class="info-box">
+        <h4><a href="https://namu.wiki/w/%EB%8F%99%EB%AC%BC%EB%B3%91%EC%9B%90" target="_blank">참고: 동물병원 관련 정보 (나무위키)</a></h4>
+        <p>나무위키에서도 동물병원 운영 및 시설에 대한 기본적인 정보를 얻을 수 있습니다. 병원 규모, 진료 항목 등에 대한 이해는 인테리어 설계에 큰 도움이 됩니다.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <span id="contact-anchor" class="anchor"></span>
+    <h2>무료 견적 상담 및 전국 인테리어 전문가 추천 요청</h2>
+    <p>성공적인 개원을 위한 첫걸음, 전문가의 맞춤형 상담으로 시작하세요. 전국 어디든(서울, 경기, 부산, 대구, 인천, 광주, 대전, 울산 등) 최적화된 동물병원 인테리어 견적과 '추천' 업체를 제공해 드립니다. '평균' 비용부터 '예상 금액'까지 상세하게 안내해 드립니다.</p>
+    <form action="/submit" method="POST" style="max-width:600px; margin:auto;">
+      <label for="name">이름<span style="color:red;">*</span></label><br />
+      <input type="text" id="name" name="name" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:6px; box-sizing:border-box;" />
+
+      <label for="phone">연락처<span style="color:red;">*</span></label><br />
+      <input type="tel" id="phone" name="phone" required placeholder="010-1234-5678" pattern="[0-9\-]+" style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:6px; box-sizing:border-box;" />
+
+      <label for="location">개원 예정 지역<span style="color:red;">*</span></label><br />
+      <select id="location" name="location" required style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:6px; box-sizing:border-box;">
+        <option value="">지역 선택</option>
+        <option value="서울">서울</option>
+        <option value="경기">경기</option>
+        <option value="인천">인천</option>
+        <option value="부산">부산</option>
+        <option value="대구">대구</option>
+        <option value="광주">광주</option>
+        <option value="대전">대전</option>
+        <option value="울산">울산</option>
+        <option value="세종">세종</option>
+        <option value="강원">강원</option>
+        <option value="충북">충북</option>
+        <option value="충남">충남</option>
+        <option value="경북">경북</option>
+        <option value="경남">경남</option>
+        <option value="전북">전북</option>
+        <option value="전남">전남</option>
+        <option value="제주">제주</option>
+      </select>
+
+      <label for="size">예상 평수</label><br />
+      <input type="number" id="size" name="size" placeholder="예: 30평" style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:6px; box-sizing:border-box;" />
+
+      <label for="message">추가 요청 사항</label><br />
+      <textarea id="message" name="message" rows="5" style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:6px; box-sizing:border-box;" placeholder="예: 예상 예산, 원하는 디자인 컨셉, 개원 예정일 등"></textarea>
+
+      <button type="submit" class="btn-cta">무료 견적 요청하기</button>
+    </form>
+  </section>
+
+
+
+
+  
